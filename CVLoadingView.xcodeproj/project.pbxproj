@@ -14,6 +14,9 @@
 		4C17B9AF1E8E2CE6000FB28D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C17B9AD1E8E2CE6000FB28D /* LaunchScreen.storyboard */; };
 		4C17B9BA1E8E2CE6000FB28D /* CVLoadingViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C17B9B91E8E2CE6000FB28D /* CVLoadingViewTests.swift */; };
 		4C17B9C51E8E2CE6000FB28D /* CVLoadingViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C17B9C41E8E2CE6000FB28D /* CVLoadingViewUITests.swift */; };
+		4C17B9D31E8E2E04000FB28D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C17B9D21E8E2E04000FB28D /* LoadingView.swift */; };
+		4C17B9D51E8E2E22000FB28D /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C17B9D41E8E2E22000FB28D /* UIColor-Extension.swift */; };
+		4C17B9D91E8E2E2B000FB28D /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C17B9D81E8E2E2B000FB28D /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,11 @@
 		4C17B9C01E8E2CE6000FB28D /* CVLoadingViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CVLoadingViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C17B9C41E8E2CE6000FB28D /* CVLoadingViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVLoadingViewUITests.swift; sourceTree = "<group>"; };
 		4C17B9C61E8E2CE6000FB28D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C17B9D21E8E2E04000FB28D /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		4C17B9D41E8E2E22000FB28D /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		4C17B9D61E8E2E2A000FB28D /* CVLoadingView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CVLoadingView-Bridging-Header.h"; sourceTree = "<group>"; };
+		4C17B9D71E8E2E2B000FB28D /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		4C17B9D81E8E2E2B000FB28D /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,8 @@
 		4C17B9981E8E2CE5000FB28D = {
 			isa = PBXGroup;
 			children = (
+				4C17B9D21E8E2E04000FB28D /* LoadingView.swift */,
+				4C17B9D41E8E2E22000FB28D /* UIColor-Extension.swift */,
 				4C17B9A31E8E2CE6000FB28D /* CVLoadingView */,
 				4C17B9B81E8E2CE6000FB28D /* CVLoadingViewTests */,
 				4C17B9C31E8E2CE6000FB28D /* CVLoadingViewUITests */,
@@ -97,12 +107,15 @@
 		4C17B9A31E8E2CE6000FB28D /* CVLoadingView */ = {
 			isa = PBXGroup;
 			children = (
+				4C17B9D71E8E2E2B000FB28D /* UIView+Extension.h */,
+				4C17B9D81E8E2E2B000FB28D /* UIView+Extension.m */,
 				4C17B9A41E8E2CE6000FB28D /* AppDelegate.swift */,
 				4C17B9A61E8E2CE6000FB28D /* ViewController.swift */,
 				4C17B9A81E8E2CE6000FB28D /* Main.storyboard */,
 				4C17B9AB1E8E2CE6000FB28D /* Assets.xcassets */,
 				4C17B9AD1E8E2CE6000FB28D /* LaunchScreen.storyboard */,
 				4C17B9B01E8E2CE6000FB28D /* Info.plist */,
+				4C17B9D61E8E2E2A000FB28D /* CVLoadingView-Bridging-Header.h */,
 			);
 			path = CVLoadingView;
 			sourceTree = "<group>";
@@ -193,6 +206,7 @@
 				TargetAttributes = {
 					4C17B9A01E8E2CE6000FB28D = {
 						CreatedOnToolsVersion = 8.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					4C17B9B41E8E2CE6000FB28D = {
@@ -259,8 +273,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C17B9D91E8E2E2B000FB28D /* UIView+Extension.m in Sources */,
 				4C17B9A71E8E2CE6000FB28D /* ViewController.swift in Sources */,
+				4C17B9D51E8E2E22000FB28D /* UIColor-Extension.swift in Sources */,
 				4C17B9A51E8E2CE6000FB28D /* AppDelegate.swift in Sources */,
+				4C17B9D31E8E2E04000FB28D /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,10 +429,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CVLoadingView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.k.k.cyan.van.CVLoadingView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CVLoadingView/CVLoadingView-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -424,10 +444,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CVLoadingView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.k.k.cyan.van.CVLoadingView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CVLoadingView/CVLoadingView-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
