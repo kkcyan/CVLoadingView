@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C0050491EC2FD5500F56F6E /* TimeMeterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0050481EC2FD5500F56F6E /* TimeMeterHelper.swift */; };
 		4C17B9A51E8E2CE6000FB28D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C17B9A41E8E2CE6000FB28D /* AppDelegate.swift */; };
 		4C17B9A71E8E2CE6000FB28D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C17B9A61E8E2CE6000FB28D /* ViewController.swift */; };
 		4C17B9AA1E8E2CE6000FB28D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C17B9A81E8E2CE6000FB28D /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 		4C17B9D31E8E2E04000FB28D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C17B9D21E8E2E04000FB28D /* LoadingView.swift */; };
 		4C17B9D51E8E2E22000FB28D /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C17B9D41E8E2E22000FB28D /* UIColor-Extension.swift */; };
 		4C17B9D91E8E2E2B000FB28D /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C17B9D81E8E2E2B000FB28D /* UIView+Extension.m */; };
+		4C970A1C1F0E67E700F63818 /* NewTonGradleLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C970A1B1F0E67E700F63818 /* NewTonGradleLoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C0050481EC2FD5500F56F6E /* TimeMeterHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeMeterHelper.swift; sourceTree = "<group>"; };
 		4C17B9A11E8E2CE6000FB28D /* CVLoadingView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CVLoadingView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C17B9A41E8E2CE6000FB28D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C17B9A61E8E2CE6000FB28D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +58,7 @@
 		4C17B9D61E8E2E2A000FB28D /* CVLoadingView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CVLoadingView-Bridging-Header.h"; sourceTree = "<group>"; };
 		4C17B9D71E8E2E2B000FB28D /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		4C17B9D81E8E2E2B000FB28D /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		4C970A1B1F0E67E700F63818 /* NewTonGradleLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTonGradleLoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 		4C17B9981E8E2CE5000FB28D = {
 			isa = PBXGroup;
 			children = (
+				4C970A1B1F0E67E700F63818 /* NewTonGradleLoadingView.swift */,
+				4C0050481EC2FD5500F56F6E /* TimeMeterHelper.swift */,
 				4C17B9D21E8E2E04000FB28D /* LoadingView.swift */,
 				4C17B9D41E8E2E22000FB28D /* UIColor-Extension.swift */,
 				4C17B9A31E8E2CE6000FB28D /* CVLoadingView */,
@@ -273,8 +279,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C970A1C1F0E67E700F63818 /* NewTonGradleLoadingView.swift in Sources */,
 				4C17B9D91E8E2E2B000FB28D /* UIView+Extension.m in Sources */,
 				4C17B9A71E8E2CE6000FB28D /* ViewController.swift in Sources */,
+				4C0050491EC2FD5500F56F6E /* TimeMeterHelper.swift in Sources */,
 				4C17B9D51E8E2E22000FB28D /* UIColor-Extension.swift in Sources */,
 				4C17B9A51E8E2CE6000FB28D /* AppDelegate.swift in Sources */,
 				4C17B9D31E8E2E04000FB28D /* LoadingView.swift in Sources */,
@@ -527,6 +535,7 @@
 				4C17B9CB1E8E2CE6000FB28D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C17B9CC1E8E2CE6000FB28D /* Build configuration list for PBXNativeTarget "CVLoadingViewTests" */ = {
 			isa = XCConfigurationList;
@@ -535,6 +544,7 @@
 				4C17B9CE1E8E2CE6000FB28D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C17B9CF1E8E2CE6000FB28D /* Build configuration list for PBXNativeTarget "CVLoadingViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -543,6 +553,7 @@
 				4C17B9D11E8E2CE6000FB28D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

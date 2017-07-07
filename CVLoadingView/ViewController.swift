@@ -8,11 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, TimerDelegate {
     @IBOutlet weak var start: UIButton!
     @IBOutlet weak var stop: UIButton!
     
     weak var loadingView: LoadingView!
+    weak var newtonCradle: NewTonGradleLoadingView!
+    var timer: TimeMeterHelper?
+    
     
     @IBAction func clickStart(_ sender: UIButton) {
         
@@ -24,6 +27,7 @@ class ViewController: UIViewController {
     @IBAction func clickStop(_ sender: UIButton) {
         
         loadingView.hideLoadingView()
+        newtonCradle.hideNewTonGradleView()
         start.isEnabled = true
         stop.isEnabled = false
     }
@@ -52,7 +56,20 @@ class ViewController: UIViewController {
         
         let loadingView = LoadingView.showLoadingWithView(view: self.view)
         
+        let newtonCradle = NewTonGradleLoadingView.showLoadingWithView(view: self.view)
+        
         self.loadingView = loadingView
+        self.newtonCradle = newtonCradle
+        
+//        timer = TimeMeterHelper.init()
+//        timer?.creatTimer(ltimer: 128)
+//        timer?.delegate = self
     }
+    
+    func timerChange(value: String) {
+        print("timer = \(value)")
+    }
+    
+    
 }
 
